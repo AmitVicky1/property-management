@@ -41,7 +41,7 @@ public class PropertyServiceImpl implements PropertyService {
 
         // Converter code removed from here and created new package and new converter class
         PropertyEntity pe = propertyConverter.convertDTOtoEntity(propertyDTO);
-        pe=propertyRepository.save(pe); // save() only accepts entity type as args and we only have a DTO so we copy values in the pe PROPERTY ENTITY
+        pe=propertyRepository.save(pe); // save() only accepts entity object type as args and we only have a DTO so we copy values in the pe PROPERTY ENTITY
 
 //        PropertyDTO dto = propertyConverter.convertEntityToDTO(pe);
 //        return dto;
