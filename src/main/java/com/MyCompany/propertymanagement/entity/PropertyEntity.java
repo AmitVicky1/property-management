@@ -20,9 +20,10 @@ public class PropertyEntity {
     @Column(name="PROPERTY_TITLE",nullable=false)
     private String title; // property name
     private String description;
-    private String ownerName;
-    @Column(name="EMAIL",nullable=false)  // if not given names created like ownerEmail
-    private String ownerEmail;
+//    private String ownerName;
+//    @Column(name="EMAIL",nullable=false)  // if not given names created like ownerEmail
+//    private String ownerEmail;
+    // have been made part of USER entity
     private Double price;
     private String address;
 }

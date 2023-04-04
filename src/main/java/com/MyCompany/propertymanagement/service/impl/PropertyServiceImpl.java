@@ -5,7 +5,7 @@ import com.MyCompany.propertymanagement.dto.PropertyDTO;
 import com.MyCompany.propertymanagement.entity.PropertyEntity;
 import com.MyCompany.propertymanagement.repository.PropertyRepository;
 import com.MyCompany.propertymanagement.service.PropertyService;
-import com.fasterxml.jackson.databind.annotation.JsonAppend;
+//import com.fasterxml.jackson.databind.annotation.JsonAppend;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -54,6 +54,7 @@ public class PropertyServiceImpl implements PropertyService {
     public List<PropertyDTO> getAllProperties() {
 
         System.out.println("Inside Service "+dummy);
+        System.out.println("Inside Service "+dbUrl);
         List<PropertyEntity> listOfProperties = (List<PropertyEntity>)propertyRepository.findAll(); // TYPE CASTING
         List<PropertyDTO> propertyList = new ArrayList<>();
         for(PropertyEntity pe:listOfProperties){
@@ -72,8 +73,8 @@ public class PropertyServiceImpl implements PropertyService {
             PropertyEntity pe = optEn.get(); // data from DB
             pe.setTitle(propertyDTO.getTitle());
             pe.setAddress(propertyDTO.getAddress());
-            pe.setOwnerEmail(propertyDTO.getOwnerEmail());
-            pe.setOwnerName(propertyDTO.getOwnerName());
+//            pe.setOwnerEmail(propertyDTO.getOwnerEmail());
+//            pe.setOwnerName(propertyDTO.getOwnerName());
             pe.setPrice(propertyDTO.getPrice());
             pe.setDescription(propertyDTO.getDescription());
 
