@@ -5,7 +5,7 @@ import com.MyCompany.propertymanagement.dto.PropertyDTO;
 import com.MyCompany.propertymanagement.entity.PropertyEntity;
 import com.MyCompany.propertymanagement.repository.PropertyRepository;
 import com.MyCompany.propertymanagement.service.PropertyService;
-import com.fasterxml.jackson.databind.annotation.JsonAppend;
+//import com.fasterxml.jackson.databind.annotation.JsonAppend;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
