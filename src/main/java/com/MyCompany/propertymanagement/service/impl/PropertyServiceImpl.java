@@ -54,6 +54,7 @@ public class PropertyServiceImpl implements PropertyService {
     public List<PropertyDTO> getAllProperties() {
 
         System.out.println("Inside Service "+dummy);
+        System.out.println("Inside Service "+dbUrl);
         List<PropertyEntity> listOfProperties = (List<PropertyEntity>)propertyRepository.findAll(); // TYPE CASTING
         List<PropertyDTO> propertyList = new ArrayList<>();
         for(PropertyEntity pe:listOfProperties){
