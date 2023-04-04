@@ -8,7 +8,7 @@ FIRST TIME GIT AAND GITHUB SETUP
 6. git push --set-upstream origin master
 
 NEXT TIME ONWARDS
-==================================
+====================================
 1. git pull
 2. git add .
 3. git commit -m "some message"
