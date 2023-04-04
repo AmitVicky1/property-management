@@ -1,0 +1,6 @@
+1. git init
+2. git add .
+3. git commit -m "first commit"
+4. git remote add origin https://github.com/AmitVicky1/property-management.git
+5. git remote set-url origin https://AmitVicky1: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@github.com/AmitVicky1/property-management.git
+6. git push --set-upstream origin master
