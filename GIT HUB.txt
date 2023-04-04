@@ -6,7 +6,7 @@ git commit -m "first commit"
 git branch -M main 		(( not necessary since MASTER Branch already present ))
 git remote add origin https://github.com/AmitVicky1/property-management.git
 git remote set-url origin https://USERNAME:<MYTOKEN>@github.com/USERNAME/REPO.git            --------->>>>>   
-			git remote set-url origin https://AmitVicky1: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@github.com/AmitVicky1/property-management.git
+			git remote set-url origin https://AmitVicky1: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@github.com/AmitVicky1/property-management.git
 git push -u origin main
 git push --set-upstream origin master
 
