@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 public class PropertyDTO {
 
-    private long id; // to capture the entire object received from SERVICE layer and keep the objects loosely coupled
+    private Long id; // to capture the entire object received from SERVICE layer and keep the objects loosely coupled
     private String title; // property name
     private String description;
     private String ownerName;
